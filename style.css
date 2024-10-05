@@ -5,13 +5,7 @@
 }
 /* Media query for screens smaller than 1200px (desktops, laptops) */
 @media screen and (max-width: 1200px) {
-    .left-container {
-        width: 40%; 
-    }
-    .right-container {
-        width: 60%; 
-        padding-left: 1.5rem; 
-    }
+    
 
     .content h1 {
         font-size: 2.8rem; 
@@ -20,10 +14,8 @@
         font-size: 1.2rem; 
     }
 
-    .detail {
-        max-width: 28rem; 
-        font-size: 0.95rem; 
-    }
+    
+    
 
     .btn-container button {
         font-size: 0.95rem; 
@@ -37,10 +29,7 @@
         flex-direction: column;
     }
 
-    .left-container, .right-container {
-        width: 100%;
-        height: auto;
-    }
+    
 
     .navlist {
         flex-direction: column;
@@ -69,10 +58,7 @@
     .prot-container {
         flex-direction: column; 
     }
-    .left-container, .right-container {
-        width: 100%; 
-        padding: 0.5rem; 
-    }
+    
 }
 
 /* Media query for screens smaller than 768px (large mobile) */
@@ -85,10 +71,7 @@
         font-size: 1.1rem; 
     }
 
-    .detail {
-        max-width: 22rem; 
-        font-size: 0.9rem; 
-    }
+    
 
     .navlist {
         position: static;
@@ -102,10 +85,7 @@
         font-size: 0.85rem; 
     }
 
-    .container {
-        width: 90%; 
-        margin-bottom: 1rem; 
-    }
+    
     .projects {
         flex-direction: column;
         align-items: center;
@@ -138,9 +118,7 @@
         font-size: 0.9rem; 
     }
 
-    .detail {
-        font-size: 0.85rem; 
-    }
+    
 
     .icons {
         gap: 0.8rem; 
@@ -155,14 +133,69 @@
         font-size: 0.8rem;
     }
 
-    .container {
-        width: 100%;
-        margin: 0.5rem 0; 
-    }
+    
 
     .btn-container button {
         padding: 0.5rem 0.8rem;}
 }
+.main {
+    padding: 64px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both
+  }
+  
+  .column-66 {
+    float: left;
+    width: 66.66666%;
+    padding: 20px;
+  }
+ 
+  .column-33 {
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
+  }
+  
+  .large-font {
+    font-size: 48px;
+    color: whitesmoke;
+  }
+  
+  .xlarge-font {
+    font-size: 64px;
+    color:whitesmoke;
+  }
+  
+  .button {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #04AA6D;
+  }
+  
+  img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .column-66,
+    .column-33 {
+      width: 100%;
+      text-align: center;
+    }
+    img {
+      margin: auto;
+    }
+  }
+  
 
 
 
@@ -216,29 +249,9 @@
     background: #3877FF;
     
 }
-.left-container{
-    background: linear-gradient(#3877FF,#262525 70%);
-    width:30%;
-    
-}
 
-.left-container {
-    background: linear-gradient(#3877FF, #262525 70%);
-    flex: 1; 
-    min-width: 250px; 
-}
 
-.right-container {
-    background: #262525;
-    flex: 2; 
-    padding-left: 3rem;
-    min-width: 250px; 
-}
-.left-container,.right-container{
-    height:100vh;
-    display: flex;
-    align-items: center;
-}
+
 .icons .fa-brands{
     color:whitesmoke;
     font-size: 1.7rem;
@@ -271,41 +284,41 @@
 }
 .btn-container button{
     border:0.1rem solid #3877FF;
-    font-size: 1.1rem;
-    padding-top: 1rem;
+    font-size: 20px;
+    padding-top: 10px;
     padding-bottom: 0.8rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     border-radius: 0.5rem;
     cursor: pointer;
     transition: .5sec;
+    margin-top: 15px;
+    margin-left: 5px;
 }
 button:nth-child(1){
     background:#6495ED ;
 }
 button:nth-child(2){
-    background: transparent;
-    color:#6495ED ;
-    margin-left: 2rem;
-
-}
-button:nth-child(3){
     background:#6495ED ;
-    margin-left: 2rem;
 }
+button:nth-child(2):hover{
+    background: transparent;
+    color: #6495ED ;
+}
+.para{
+    color: whitesmoke;
+}
+
+
+
 
 button:nth-child(1):hover{
     background: transparent;
     color: #6495ED ;
 }
-button:nth-child(2):hover{
-    background:#6495ED ;
-    color:#262525;
-}
-button:nth-child(3):hover{
-    background: transparent;
-    color: #6495ED ;
-}
+
+
+
 
 .icons .fa-brands:hover{
     cursor: pointer;
@@ -417,9 +430,7 @@ button:nth-child(3):hover{
 .skills{
     text-align: center;
 }
-.container h2{
-    color: #5DB9EE;
-}
+
 .projects{
     background-color: #262525;
 
@@ -437,29 +448,7 @@ button:nth-child(3):hover{
     display: flex;
 }
 
-.container{
-    background-color: #262525;
-    width: 40%;
-    text-align: center;
-    border: .2rem solid #5DB9EE;
-    box-sizing: border-box;
-    color: #5DB9EE;
-    padding: 1.5rem;
-    margin:5rem;
-  }
-  .container button{
-    border:0.1rem solid #3877FF;
-    font-size: 1.1rem;
-    padding-top: 1rem;
-    padding-bottom: 0.8rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    transition: .5sec;
-    margin-top: 2rem;
 
-  }
   .skills h3{
     color: aliceblue;
     font-size: 18px;
