@@ -140,6 +140,8 @@
 }
 .main {
     padding: 64px;
+    
+    
   }
   
   .row:after {
@@ -223,6 +225,9 @@
 }
 .navlist li{
     list-style: none;
+    display: inline;
+    margin-right: 20px;
+
 }
 .navlist li a{
     text-decoration:none;
@@ -230,6 +235,7 @@
     font-size: 1rem;
     color: #fff;
     position: relative;
+    
 }
 .navlist li a::after{
     content:"";
@@ -249,6 +255,12 @@
     background: #3877FF;
     
 }
+.raw:after {
+    content: "";
+    display: table;
+    clear: both
+  }
+  
 
 
 
@@ -316,6 +328,11 @@ button:nth-child(1):hover{
     background: transparent;
     color: #6495ED ;
 }
+.icons {
+    flex-direction: row;
+    gap: 1rem; 
+}
+
 
 
 
@@ -326,35 +343,9 @@ button:nth-child(1):hover{
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent ;
 }
-.design .square{
-    aspect-ratio: 1;
-    position:absolute;
-    border-radius: 50%;
-    top: 50%;
-    right:55%;
-    transform: translate(-50%,-50%);
 
-}
-.square:nth-child(1){
-    background: red;
-    width: 26rem;
-    background: linear-gradient(transparent 50%,black 65%);
-}
 
-.square:nth-child(2){
-    background:black;
-    background-size: 100%;
-    border: .2rem solid white;
-    width: 25rem;
-    box-shadow: 
-    0 0 2rem #fff , 
-    0 0 0 #3877FF;
-}
-.square:nth-child(2) img{
-    padding-top: 7rem;
-    padding-left: 6rem;
-    
-}
+
 .row {
     display: flex;
     justify-content: center; 
@@ -408,6 +399,7 @@ button:nth-child(1):hover{
     padding-left: 10px;
     width: 100%;
     text-align: center;
+    margin-top: 10px;
 }
     
 
@@ -523,8 +515,26 @@ button {
 
 button:hover {
     background-color: #6495ED; }
-
-
+    
+    .icons .fa-brands:hover{
+        cursor: pointer;
+        background: linear-gradient(#fff,#3877FF);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color:transparent ;
+    }
+    
+    
+    /* Footer */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background:#262525;
+      margin-top: 20px;
+    }
+    .footer h3{
+        color: whitesmoke;
+        padding-top: 10px;
+    }  
 
 
 
