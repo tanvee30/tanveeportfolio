@@ -491,6 +491,50 @@ button:nth-child(3):hover{
 h2, h3 {
     text-align: center;
 }
+.contact-container {
+    background-color: #262525; 
+    color: #5DB9EE;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #5DB9EE;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.form-group textarea {
+    resize: vertical; 
+}
+
+button {
+    background-color: #3877FF; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #6495ED; }
+
 
 
 
