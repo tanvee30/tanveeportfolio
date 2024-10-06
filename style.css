@@ -224,8 +224,8 @@ html,body {
     
     justify-content: center;
     align-items: center;
-    padding: 0; /* Ensure no padding */
-    margin: 0; /* Remove any margin */
+    padding: 0; 
+    margin: 0; 
     
 }
 .navlist li{
@@ -405,9 +405,8 @@ button:nth-child(1):hover{
     
 
 .skills h2 {
-    margin-bottom: 0; /* Remove bottom margin of the Skills section */
-    padding-bottom: 20px; /* Adjust padding to match the contact form */
-
+    margin-bottom: 0; 
+    padding-bottom: 20px; 
 
     padding-bottom: 25px;
     padding-left: 20px;
@@ -437,6 +436,48 @@ button:nth-child(1):hover{
   .skills h4{
     color: aliceblue;
   }
+  
+.columnn {
+    float: left;
+    width: 40%;
+    height: 40%;
+    padding-left: 150px;
+    
+    padding-top: 30px;
+    
+  }
+  
+  
+  .rows {margin: 0 -5px;}
+  
+  
+  .rows:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  
+  
+  .cards{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color:#262525;
+    border: .1rem solid #5DB9EE;
+    color: aliceblue;
+    
+    width:100%;
+  }
+  .projects{
+    background-color: #262525;
+  }
+  .projects h2{
+    color: aliceblue;
+  }
+  
+
   .about-me {
     display: flex;
     justify-content: center; 
@@ -526,8 +567,8 @@ button:hover {
       text-align: center;
       background:#262525;
      
-      margin-top: 0; /* Remove extra space at the top of the footer */
-      padding-top: 20px; /* Keep some padding for separation from contact section */
+      margin-top: 0; 
+      padding-top: 20px; 
 }
     
     .footer h3{
