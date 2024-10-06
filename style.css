@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+html,body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
 /* Media query for screens smaller than 1200px (desktops, laptops) */
 @media screen and (max-width: 1200px) {
     
@@ -206,22 +212,21 @@
 
 
 
-.prot-container {
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: row; 
-}
 
 .navlist{
     display:flex;
     gap:2.7rem;
     height:18vh;
     width:100%;
-    position: fixed;
+    position: absolute;
     top:0;
+    background-color: #262525;
+    
     justify-content: center;
     align-items: center;
+    padding: 0; /* Ensure no padding */
+    margin: 0; /* Remove any margin */
+    
 }
 .navlist li{
     list-style: none;
@@ -255,12 +260,7 @@
     background: #3877FF;
     
 }
-.raw:after {
-    content: "";
-    display: table;
-    clear: both
-  }
-  
+
 
 
 
@@ -395,15 +395,20 @@ button:nth-child(1):hover{
     text-align: center;
     background-color: #262525;
     color: aliceblue;
-    padding-top: 5px;
+    padding-top: 20px;
     padding-left: 10px;
+    padding-right: 10px;
     width: 100%;
-    text-align: center;
-    margin-top: 10px;
+   
+    margin: 0;
 }
     
 
 .skills h2 {
+    margin-bottom: 0; /* Remove bottom margin of the Skills section */
+    padding-bottom: 20px; /* Adjust padding to match the contact form */
+
+
     padding-bottom: 25px;
     padding-left: 20px;
     padding-top: 20px;
@@ -423,22 +428,6 @@ button:nth-child(1):hover{
     text-align: center;
 }
 
-.projects{
-    background-color: #262525;
-
-    display: flex; 
-    justify-content: space-around; 
-    flex-wrap: wrap;
-    padding: 2rem 0; 
-    gap: 2rem;
-}
-.projects h2{
-    color: aliceblue;
-    text-align: center;
-}
-.wp{
-    display: flex;
-}
 
 
   .skills h3{
@@ -472,14 +461,21 @@ button:nth-child(1):hover{
 h2, h3 {
     text-align: center;
 }
+.C-C{
+    background-color: #262525;
+    margin: 0 auto;
+}
 .contact-container {
     background-color: #262525; 
     color: #5DB9EE;
     padding: 20px;
-    margin: 20px auto;
+    margin: 0px auto;
     border-radius: 10px;
-    max-width: 600px;
+    max-width:600px;
+    width:100%;
+    
 }
+    
 
 .form-group {
     margin-bottom: 15px;
@@ -529,8 +525,11 @@ button:hover {
       padding: 20px;
       text-align: center;
       background:#262525;
-      margin-top: 20px;
-    }
+     
+      margin-top: 0; /* Remove extra space at the top of the footer */
+      padding-top: 20px; /* Keep some padding for separation from contact section */
+}
+    
     .footer h3{
         color: whitesmoke;
         padding-top: 10px;
