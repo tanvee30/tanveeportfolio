@@ -1,174 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
-</head>
-<body>
-    <ul class="navlist">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#work">Project</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div class="main" style="background-color:#262525">
-        <div class="row">
-          <div class="column-33">
-            <img src="./images.jpeg"  width="335" height="471">
-          </div>
-          <div class="column-66">
-            <h1 class="large-font">Hey hii..!! I am Tanvee Saxena</h1>
-            <h1 class="xlarge-font" style="color: #5DB9EE"><b>Web Developer</b></h1>
-            <p class="para">I'm a passionate
-                web developer with a keen interest in coding.I'm always eager to learn new technologies and stay updated with the latest trends in web development.</p>
-
-            <div class="btn-container">
-                <button> <a href="#">Hire Me</a></button>
-                
-                <button> <a href="#">Download Resume</a></button>
-
-            </div>
-          </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Tanvee Saxena</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Tanvee Saxena</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-    </div>
-    <div class="skills">
-        <h2 id="skills">My Tech-Stat and Skills</h2>
-        <div class="row">
-            <div class="column">
-                <div class="card">
-                    <h3>Python Programming</h3>
-                </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <h3>C Programming</h3>
-                </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <h3>HTML</h3>
-                </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <h3>CSS</h3>
-                </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <h3>SQL</h3>
-                </div>
-            </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile.jpg" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Tanvee Saxena</h1>
+        <p class="section__text__p2">Backend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/tanvee-saxena'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href=https://github.com/tanvee30"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+       <p class="section__text__p1">Get To Know More</p>
+  <h1 class="title">About Me</h1>
+  <div class="section-container">
+    <div class="about-details-container">
+
+      <!-- Description first -->
+      <div class="text-container">
+        <p>
+          Enthusiastic and motivated individual with a passion for learning and building impactful projects. 
+          I enjoy exploring new technologies and continuously improving my skills. 
+          In my free time, I like reading books, listening to music, and exploring nature.
+        </p>
+      </div>
+
+      <!-- Education next -->
+      <div class="about-containers">
+        <div class="details-container">
+          <img
+            src="./assets/education.png"
+            alt="Education icon"
+            class="icon"
+          />
+          <h3>Education</h3>
+          <p>
+            Bachelors of Technology in Computer Science<br>
+            CGPA: 8.99<br>
+            Intermediate (CBSE), 2023<br>
+            Percentage: 92.4%<br>
+            High School (CBSE), 2021<br>
+            Percentage: 90.2%
+          </p>
+        </div>
+      </div>
+
     </div>
-    <div class="projects">
-        <h2 id="work">My Work and Projects</h2>
-        <div class="rows">
-            <div class="columnn">
-              <div class="cards">
-                <h3>Online E-book System</h3>
-                <p>It is an online libraray managment system  made using Python Programming and with an SQL connectivity.It has various functions of library.
-                     </h3></p>
-                     <button><a href="#">View Project</a></button>
+  </div>
+  <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#experience'"
+  />
+</section>
 
 
+      
+<section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <div class="article-container">
+            <!-- Frontend Skills -->
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
                 
               </div>
-            </div>
-          
-            <div class="columnn">
-              <div class="cards">
-                <h3>E-Shop</h3>
-                <p>It is ia an online e-commerce website made with HTML CSS .It includes various functions and is easily accessacle to an individual.</h3>
-                </p><button><a href="#">View Project</a></button>
-
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
                 
               </div>
-            </div>
-            
-            
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Python</h3>
+                
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>C</h3>
+                
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Django</h3>
+                
+              </div>
+            </article>
+  
+            <!-- Backend Skills -->
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>PostgreSQL</h3>
+                
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git</h3>
+                
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>GitHub</h3>
+                
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>REST</h3>
+               
+              </div>
+            </article>
+        </article>
+        <article>
+          <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+          <div>
+            <h3>Docker</h3>
+           
           </div>
-    </div>
-    
-  
-  
-
-        
-        
-        
-    
-    <div class="about-me">
-        <h2 id="about">About Me</h2>
-        <h3>!!..Know more about me..!!</h3>
-        
-       <p>
-       <h4>I am Tanvee Saxena. I am a B.Tech second year student at Ajay Kumar Garg Engineering College, Ghaziabad.<br>
-        I'm a passionate web developer with a keen interest in coding. I have worked on multiple projects and am always eager to learn new technologies.<br>
-        Apart from coding and development, I have a keen interest in reading books, listening to music, and exploring nature.<br>
-        Feel free to check out my portfolio, and let's create something amazing together.</h4>
-       </p>
-    </div>
-    <div class="C-C">
-        <div class="contact-container">
-            <h2 id="contact">Contact Me</h2>
-            <form id="contact-form">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <button type="submit">Send Message</button>
-            </form>
-            
+        </article>
+          </div>
         </div>
+      </div>
     </div>
-
-   
-    <div class="footer">
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#projects'"
+    />
+  </section>
   
-        <div class="icons">
-                  <a href="https://github.com/tanvee30"><i class="fa-brands fa-github"></i></a>
-                  <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                  <i class="fa-brands fa-linkedin-in"></i>
-                  <i class="fa-brands codeshef"></i>
+    <section id="projects">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+
+      <!-- Project 1 -->
+      <div class="details-container color-container">
+        <h2 class="experience-sub-title project-title">Portfolio Website</h2>
+        <p class="project-description">
+          A responsive website to showcase my skills, experience, and projects as a web developer.
+        </p>
+        <p class="project-tech"><strong>Tech Used:</strong> HTML, CSS, JavaScript</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/your-username/portfolio-site'"
+          >
+            GitHub
+          </button>
         </div>
-        <h3>Designed and built by Tanvee Saxena</h3>
-        
+      </div>
+
+      <!-- Project 2 -->
+      <div class="details-container color-container">
+        <h2 class="experience-sub-title project-title">To-Do App</h2>
+        <p class="project-description">
+          A task management app to create, update, and delete to-do items with due dates.
+        </p>
+        <p class="project-tech"><strong>Tech Used:</strong> JavaScript, HTML, CSS, Flask</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/your-username/todo-app'"
+          >
+            GitHub
+          </button>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="details-container color-container">
+        <h2 class="experience-sub-title project-title">Blog API</h2>
+        <p class="project-description">
+          A RESTful API backend for blogging with JWT auth, user roles, and post CRUD features.
+        </p>
+        <p class="project-tech"><strong>Tech Used:</strong> Django REST Framework, PostgreSQL</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/your-username/blog-api'"
+          >
+            GitHub
+          </button>
+        </div>
+      </div>
+
     </div>
-</body>
+  </div>
+  <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#contact'"
+  />
+</section>
+
+    <section id="contact">
+  <p class="section__text__p1">Get in Touch</p>
+  <h1 class="title">Contact Me</h1>
+
+  <div class="contact-info-upper-container">
+    <div class="contact-info-container">
+      <img
+        src="./assets/email.png"
+        alt="Email icon"
+        class="icon contact-icon email-icon"
+      />
+      <p><a href="mailto:tanveesaxena30@gmail.com">Gmail</a></p>
+    </div>
+    <div class="contact-info-container">
+      <img
+        src="./assets/linkedin.png"
+        alt="LinkedIn icon"
+        class="icon contact-icon"
+      />
+      <p><a href="https://www.linkedin.com/in/tanvee-saxena-74a001282/">LinkedIn</a></p>
+    </div>
+  </div>
+
+  <!-- ✉️ Contact Form -->
+  <form action="https://formspree.io/f/xblygrrq" method="POST" class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Tanvee Saxena. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
-        
-    
-        
-        
-        
-        
-        
-    
-    
-
-    
-    
-        
-    
-              
-            
-            
-            
-    
-    
-   
-    
-
-    
