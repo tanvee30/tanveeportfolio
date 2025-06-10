@@ -7,11 +7,18 @@
   padding: 0;
 }
 
+
 body {
   font-family: "Poppins", sans-serif;
-  background-color:black;
-  color: #e0e0e0; /* light gray base text */
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* deep ocean blue gradient */
+  
+  color: #f0f0f0; /* brighter text for better readability */
 }
+img, .icon {
+  filter: brightness(1.2) contrast(1.1);
+}
+
+
 
 html {
   scroll-behavior: smooth;
@@ -92,6 +99,12 @@ a:hover {
   height: 2px;
   background-color: #e0e0e0; /* light for visibility */
   transition: all 0.3s ease-in-out;
+}
+.menu-links {
+  display: none;
+}
+.menu-links.open {
+  display: block;
 }
 
 .menu-links {
